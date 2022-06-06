@@ -15,6 +15,7 @@ Unzipping the file, we have [flags.txt](https://github.com/Team-Rainbow-Hash/see
 Since we need 5 uppercase latters, followed by 5 digits and another 6 uppercase letters, we can make use of the regex [A-Z] as well as [0-9], along with the quantifier {5} and {6}
 The regex to be used is: [A-Z]{5}[0-9]{5}[A-Z]{6}
 Using an app locally, or a website like https://regex101.com, paste the regex in and find your answer
+
 ![img](files/img1.png "Image")
 
 ### Flag
