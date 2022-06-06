@@ -1,5 +1,5 @@
 # SEETF 2022 Writeups
-By Team RainbowHash: Aley, yanganyi, Shraefkt
+By Team RainbowHash\: Aley, yanganyi, Shraefkt
 
 | **Challenge** | **Category** | **Solves** | **Points** | **Writeup**                                                                                        |
 |---------------|--------------|------------|------------|----------------------------------------------------------------------------------------------------|
