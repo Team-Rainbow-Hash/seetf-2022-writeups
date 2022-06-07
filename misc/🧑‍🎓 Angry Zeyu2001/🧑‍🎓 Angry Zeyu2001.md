@@ -46,7 +46,7 @@ for i in onlyfiles:
 background.save('output.png')
 # exports the reassembled image as an image
 ```
-And opening `output.png`, we see a reassembled paycheque with amounts to be jealous of lol.  
+And opening `output.png`, we see a reassembled paycheque with amounts to be jealous of lol.    
 ![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/misc/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Angry%20Zeyu2001/files/output.png "Image")  
 
 
