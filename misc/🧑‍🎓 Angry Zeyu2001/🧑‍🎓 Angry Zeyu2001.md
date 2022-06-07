@@ -27,13 +27,12 @@ print(onlyfiles)
 ```
 This gives us a list of all the names of the image files in the folder.
 
-We can then use Python Imaging Library to piece all this pixels together on a black background.
+We can then use Python Imaging Library to piece all this pixels together on a white background.
 ```py
 from PIL import Image
 
-background = Image.new('RGBA', (520, 220), (255, 255, 255, 255))
-# creates the black background of size 540*230 
-# size can be obtained from checking greatest coordinates of the images, then add 10 cause the pixel size is 10x10
+background = Image.new('RGBA', (600, 300), (255, 255, 255, 255))
+# creates the white background of size 600*300 
 
 for i in onlyfiles:
 # iterates through the list of images
@@ -47,7 +46,7 @@ for i in onlyfiles:
 background.save('output.png')
 # exports the reassembled image as an image
 ```
-
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/misc/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Angry%20Zeyu2001/files/output.png "Image")  
 And opening `output.png`, we see a reassembled paycheque with amounts to be jealous of lol.  
 
 ### Flag
@@ -64,9 +63,8 @@ mypath="misc_angry_zeyu2001\distrib\pieces\pieces"
 onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 print(onlyfiles)
 
-background = Image.new('RGBA', (520, 220), (255, 255, 255, 255))
-# creates the black background of size 540*230 
-# size can be obtained from checking greatest coordinates of the images, then add 10 cause the pixel size is 10x10
+background = Image.new('RGBA', (600, 300), (255, 255, 255, 255))
+# creates the white background of size 600*300 
 
 for i in onlyfiles:
 # iterates through the list of images
