@@ -17,7 +17,7 @@ Unzipping the folder, we find many many images. However, on closer inspection (u
 And now, let's check if we are correct:
 
 First, we can list out all the files in the folder using the below code.
-```
+```py
 from os import listdir
 from os.path import isfile, join
 mypath="pieces/"
@@ -27,7 +27,7 @@ print(onlyfiles)
 This gives us a list of all the names of the image files in the folder.
 
 We can then use Python Imaging Library to piece all this pixels together on a black background.
-```
+```py
 from PIL import Image
 
 background = Image.new('RGBA', (520, 220), (255, 255, 255, 255))
@@ -54,7 +54,7 @@ And opening `output.png`, we see a reassembled paycheque with amounts to be jeal
 
 
 ### Full Solve Script
-```
+```py
 from os import listdir
 from os.path import isfile, join
 from PIL import Image
