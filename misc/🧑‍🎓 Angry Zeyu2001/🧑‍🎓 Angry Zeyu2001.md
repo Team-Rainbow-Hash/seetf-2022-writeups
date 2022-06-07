@@ -12,8 +12,73 @@ MD5: 704f59b279476f16e4fcb17b20d23c06
 [Download Zip File](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/misc/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Angry%20Zeyu2001/files/misc_angry_zeyu2001.zip "Zip File")
 
 ### Approach
+Unzipping the folder, we find many many images. However, on closer inspection (using tools like https://pixspy.com/), we can see that the images all consist of 10*10 pixel and their file names is made up of 2 numbers seperated by a fullstop (e.g `000.000.jpg`). From here, together with the information that the pictures are supposedly "remnants" of the paycheque, we can guess that images are small pieces of a larger image. We can also guess that the number in the image names are the x-coordinates and y-coordinate of the small image's position (more specifically the position of the top-left pixel of the small image) on the larger image.
+
+And now, let's check if we are correct:
+
+First, we can list out all the files in the folder using the below code.
+```
+from os import listdir
+from os.path import isfile, join
+mypath="pieces/"
+onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
+print(onlyfiles)
+```
+This gives us a list of all the names of the image files in the folder.
+
+We can then use Python Imaging Library to piece all this pixels together on a black background.
+```
+from PIL import Image
+
+background = Image.new('RGBA', (520, 220), (255, 255, 255, 255))
+# creates the black background of size 540*230 
+# size can be obtained from checking greatest coordinates of the images, then add 10 cause the pixel size is 10x10
+
+for i in onlyfiles:
+# iterates through the list of images
+    img = Image.open('pieces/'+i, 'r')
+    # opens the image
+    coordinates = (int(i.split(".")[0]),int(i.split(".")[1]))
+    # gets the coordinates of the pixel
+    background.paste(img, coordinates)
+    # pastes the pixel onto the background
+
+background.save('output.png')
+# exports the reassembled image as an image
+```
+
+And opening `output.png`, we see a reassembled paycheque with amounts to be jealous of lol.  
 
 ### Flag
+SEE{boss_aint_too_happy_bout_me_9379c958d872435}
+
+
+### Full Solve Script
+```
+from os import listdir
+from os.path import isfile, join
+from PIL import Image
+
+mypath="pieces/"
+onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
+print(onlyfiles)
+
+background = Image.new('RGBA', (520, 220), (255, 255, 255, 255))
+# creates the black background of size 540*230 
+# size can be obtained from checking greatest coordinates of the images, then add 10 cause the pixel size is 10x10
+
+for i in onlyfiles:
+# iterates through the list of images
+    img = Image.open('pieces/'+i, 'r')
+    # opens the image
+    coordinates = (int(i.split(".")[0]),int(i.split(".")[1]))
+    # gets the coordinates of the pixel
+    background.paste(img, coordinates)
+    # pastes the pixel onto the background
+
+background.save('output.png')
+# exports the reassembled image as an image
+```
 
 ---
 [Back to home](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups)
