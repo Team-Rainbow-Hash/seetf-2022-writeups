@@ -50,7 +50,7 @@ background.save('output.png')
 And opening `output.png`, we see a reassembled paycheque with amounts to be jealous of lol.  
 
 ### Flag
-SEE{boss_aint_too_happy_bout_me_9379c958d872435}
+`SEE{boss_aint_too_happy_bout_me_9379c958d872435}`
 
 
 ### Full Solve Script
