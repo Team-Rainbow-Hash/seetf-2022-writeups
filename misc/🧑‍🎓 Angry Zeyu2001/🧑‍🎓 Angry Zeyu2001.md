@@ -20,7 +20,8 @@ First, we can list out all the files in the folder using the below code.
 ```py
 from os import listdir
 from os.path import isfile, join
-mypath="pieces/"
+mypath="misc_angry_zeyu2001\distrib\pieces\pieces"
+# note that you might have to change the above path to match yours
 onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 print(onlyfiles)
 ```
@@ -36,7 +37,7 @@ background = Image.new('RGBA', (520, 220), (255, 255, 255, 255))
 
 for i in onlyfiles:
 # iterates through the list of images
-    img = Image.open('pieces/'+i, 'r')
+    img = Image.open(mypath+'\\'+i, 'r')
     # opens the image
     coordinates = (int(i.split(".")[0]),int(i.split(".")[1]))
     # gets the coordinates of the pixel
@@ -59,7 +60,7 @@ from os import listdir
 from os.path import isfile, join
 from PIL import Image
 
-mypath="pieces/"
+mypath="misc_angry_zeyu2001\distrib\pieces\pieces"
 onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 print(onlyfiles)
 
@@ -69,7 +70,7 @@ background = Image.new('RGBA', (520, 220), (255, 255, 255, 255))
 
 for i in onlyfiles:
 # iterates through the list of images
-    img = Image.open('pieces/'+i, 'r')
+    img = Image.open(mypath+'\\'+i, 'r')
     # opens the image
     coordinates = (int(i.split(".")[0]),int(i.split(".")[1]))
     # gets the coordinates of the pixel
