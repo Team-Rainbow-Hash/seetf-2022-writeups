@@ -15,7 +15,7 @@ For beginners:<br>
 
 
 ### Approach
-Looking at the article given to us, we can see that this challenge is about file path traversal. If you aren't sure what file path traversal is, it might be helpful to refer to the (article)[https://portswigger.net/web-security/file-path-traversal] linked above.
+Looking at the article given to us, we can see that this challenge is about file path traversal. If you aren't sure what file path traversal is, it might be helpful to refer to the [article](https://portswigger.net/web-security/file-path-traversal) linked above.
 
 The website given to us has a url of http://sourcelessguessyweb.chall.seetf.sg:1337/?page=whysoserious. The page parameter takes input from us and returns the contents of the specified file. In this case, the application reads from the following file path: `/var/www/images/whysoserious`.
 
