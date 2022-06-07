@@ -24,13 +24,13 @@ We can then try to retrieve an important file from the server's filesystem. Exam
 Thus, we can get a payload of `../../../etc/passwd`, giving us the file we are looking for. Putting the paylaod into the url, we get http://sourcelessguessyweb.chall.seetf.sg:1337/?page=../../../etc/passwd. 
 
 With the payload, we can then retrieve such a page.
-![img]( "Image")  
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/web/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Sourceless%20Guessy%20Web%20(Baby%20Flag)/files/passwd_website.png "Image")  
 
 Highlighting all the text, we can see some invisible text, and the flag is in there (underlined in the image).
-![img]( "Image")  
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/web/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Sourceless%20Guessy%20Web%20(Baby%20Flag)/files/passwd_website_highlighted.png "Image")  
 
 To get the flag, we can go into Inspect Element to find it.
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/web/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Sourceless%20Guessy%20Web%20(Baby%20Flag)/files/passwd_website_inspectelement.png "Image")
 
 
 ### Flag
