@@ -28,6 +28,9 @@ Opening up Google Maps, we can search for "Jurong Bird Park" and see that there 
 To confirm that there is the right location, we can go into street view where we find a very similar image to the challenge file.
 ![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Everyone%20Needs%20a%20Break/files/Street%20View.png "Image")  
 
+Now that we have found the location, let's get the postal code for the flag!
+![img]( "Image")
+
 ### Flag
 `SEE{629143}`
 
