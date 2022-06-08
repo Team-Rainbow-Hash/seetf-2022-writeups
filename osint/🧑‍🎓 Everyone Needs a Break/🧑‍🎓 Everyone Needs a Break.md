@@ -29,7 +29,7 @@ To confirm that there is the right location, we can go into street view where we
 ![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Everyone%20Needs%20a%20Break/files/Street%20View.png "Image")  
 
 Now that we have found the location, let's get the postal code for the flag!
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Everyone%20Needs%20a%20Break/files/Postal%20Code.png "Image")
 
 ### Flag
 `SEE{629143}`
