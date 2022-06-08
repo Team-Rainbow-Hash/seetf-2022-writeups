@@ -1,4 +1,4 @@
-## Challenge Name: 🧑‍🎓 Everyone Needs a Break
+## Challenge Name: Batnet 1
 Author: Mythiology  
 Category: OSINT  
 Points: 100  
