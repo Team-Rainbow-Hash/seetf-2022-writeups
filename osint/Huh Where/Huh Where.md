@@ -21,7 +21,7 @@ There is an image given to us in the zip file. Opening it up, this is what we ge
 From here, there are a number of things that we can observe. Firstly, the image is of the location shows a roundabout around a tree. 
 
 If we look carefully, we can also observe a watermark on the image. The watermark tells us that this image is taken from Google Maps' street view.
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Huh%20Where/files/Watermark.jpg "Image")
 
 
 With all this information, we can now try to find the location of the image. Putting all the information together, what we can do is to search for park connectors on Google Map to look for an area that has a path in the shape of the circle (due to the roundabout).
