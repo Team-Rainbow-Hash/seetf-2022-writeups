@@ -1,4 +1,4 @@
-## Challenge Name: 🧑‍🎓 Everyone Needs a Break
+## Challenge Name: 🧑‍🎓 Sniffed Traffic
 Author: Enyei  
 Category: Forensics  
 Points: 100  
