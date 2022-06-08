@@ -32,7 +32,7 @@ From experience with working with Base64, we can recognise that the "=" signs at
 ![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/files/Base64%20Decoded.png "Image")
 This gets us the 4th part of the flag, `_ab0ut_3very0ne}`.
 
-Now we are just left with the 2nd and 3rd parts of the flag! For this, we can just try randomly try some popular platforms and search within them for 1mn0tb4tm4m. From there, we can try TikTok, thus getting us the following
+Now we are just left with the 2nd and 3rd parts of the flag! For this, we can just try randomly try some popular platforms and search within them for 1mn0tb4tm4m. From there, we can try TikTok, thus getting us the following:
 ![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/files/Tik%20Tok.png "Image")
 
 From here, we can get the 2nd part of the flag to be `_3y3_help_m3`.
