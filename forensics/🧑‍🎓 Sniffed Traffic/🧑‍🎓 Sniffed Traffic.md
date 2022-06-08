@@ -39,10 +39,10 @@ And voila! In the next TCP stream, we find ourselves the password, which is `499
 Now we can put this password into the zip file to get a file called [Stuff]( "File"). During the CTF itself, at this point, I honestly thought that I was done with the challenge and `Stuff` would just contain the flag file, but wow, how woefully wrong was I. Opening stuff in note, instead of getting the flag, I was greeted with a bunch of gibberish. 
 
 Now, we can try putting the file through binwalk to see what sort of file it is or what it might contain.
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/forensics/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Sniffed%20Traffic/files/Stuff%20Binwalk.png "Image")
 
 We can extract the zip from the stuff file using the command `binwalk -e stuff`
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/forensics/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Sniffed%20Traffic/files/Stuff%20Binwalk%202.png "Image")
 
 And no, the fun doesn't end here lol. Turns out the extracted zip file is password protected too! Yay! This time, we can try bruteforcing the zip file password using the [Fcrackzip Tool](https://www.geeksforgeeks.org/fcrackzip-tool-crack-a-zip-file-password-in-kali-linux/). We can also make use of the rockyou.txt wordlist found in /usr/share/wordlists. The command for doing so is `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt 3E8.zip`.
 ![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/forensics/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Sniffed%20Traffic/files/fcrackzip.png "Image")
