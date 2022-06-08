@@ -13,35 +13,36 @@ Validator service: nc fun.chall.seetf.sg 60001
 For this challenge, we are looking for the accounts called 1mn0tb4tm4m. First off, we can check some of the major social media platforms for this account name. <br><br>
 
 Firstly, we can try Instagram, one of the most popular photo and video sharing social networking service, which can definitely be used for leisure purposes. Immediately, we find an account with a matching name.
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/files/Instagram%20Search.png "Image")
 
 Going into the account, we find some posts and also the first part of the flag, `SEE{br0th3r`, in the user description.
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/files/Instagram%20Account.png "Image")
 
-Looking at the post of a discord message from the all mighty zeyu2001, we can infer that Batman uses Discord and is in the SEETF server, where the message was posted. 
-![img]( "Image")
+Looking at the post of a discord message from the zeyu2001, we can infer that Batman uses Discord and is in the SEETF server, where the message was posted. 
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/files/Instagram%20Post.png "Image")
 
 We can now try to find Batman in the Discord server. Discord has a function that sends a message for users joining the server, which happened to be enabled in the SEETF server. Interestingly, the message is also marked as from the relevant user, which means that we can search for message from 1mn0tb4tm4m. From there, Discord helps to complete the search request into `from: 1mn0tb4tm4m#0166`. 
-![img]( "Image")
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/files/Discord%20Search%20Query.png "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/files/Discord%20Search.png "Image")
 
 From here, we can look at Batman's Discord account, which has an about me. 
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/files/Discord%20Account.png "Image")
 
 From experience with working with Base64, we can recognise that the "=" signs at the back are likely paddings for Base64 and the about me is Base64 encoded. We can decode the about me, finding ourselves another part of the flag. For this, I used an online decoder at https://www.base64decode.org/ but anthing else should work too.
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/files/Base64%20Decoded.png "Image")
 This gets us the 4th part of the flag, `_ab0ut_3very0ne}`.
 
 Now we are just left with the 2nd and 3rd parts of the flag! For this, we can just try randomly try some popular platforms and search within them for 1mn0tb4tm4m. From there, we can try TikTok, thus getting us the following
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/files/Tik%20Tok.png "Image")
 
 From here, we can get the 2nd part of the flag to be `_3y3_help_m3`.
 
 Lastlty, trying GitHub, we find an account named 1mn0tb4tm4m. Initially, the flag isn't very obvious, and we only get a message telling the flag is somehwere here.
-![img]( "Image")
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/files/GitHub%20Search.png "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/files/GitHub%20Account.png "Image")
 
 However, poking around his repositories a bit, we find that his commit message's description contains the third part of the flag, `_f1nd_0ut`.
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/files/Github%20Commit.png "Image")
 
 Lastly, we can piece together all of the parts of the flag and get the full flag! `SEE{br0th3r_3y3_help_m3_f1nd_0ut_ab0ut_3very0ne}`
 
