@@ -11,6 +11,6 @@ By Team RainbowHash\: Aley, yanganyi, Shraefkt
 | [🧑‍🎓 Everyone Needs a Break](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Everyone%20Needs%20a%20Break/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Everyone%20Needs%20a%20Break.md) | OSINT        | 215        | 100        |
 | [Batnet 1](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Batnet%201/Batnet%201.md)                                                                                                                              | OSINT        | 109        | 100        |
 
-## Legend
+
 🧑‍🎓 = Beginner Friendly
 🤪 = Insanity Check
