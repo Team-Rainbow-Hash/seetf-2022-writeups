@@ -23,7 +23,7 @@ Unzipping the folder and scutinizing the image, we can see that there are large 
 ![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Everyone%20Needs%20a%20Break/files/challenge.png "Image")  
 
 Opening up Google Maps, we can search for "Jurong Bird Park" and see that there is a fish farm beisde it called "ATC Fishing Village @Jurong Hill". 
-![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Everyone%20Needs%20a%20Break/files/Gogle%20Maps.png "Image")  
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Everyone%20Needs%20a%20Break/files/Google%20Maps.png "Image")  
 
 To confirm that there is the right location, we can go into street view where we find a very similar image to the challenge file.
 ![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Everyone%20Needs%20a%20Break/files/Street%20View.png "Image")  
