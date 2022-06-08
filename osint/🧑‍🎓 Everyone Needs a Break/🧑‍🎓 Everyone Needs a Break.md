@@ -16,7 +16,7 @@ MD5: 10e28ca0926deb6c98031e6591db74f3
 ### Approach
 For this challenge, we are looking for the place shown in the image.<br><br>
 
-When doing OSINT challenges, its usually very very helpful to read the challenge description very carefuly as it contains all the information you need to solve the challenge.  
+When doing OSINT challenges, it's usually very very helpful to read the challenge description very carefully as it contains all the information you need to solve the challenge.  
 In the case, the challenge description tells us that "He went to feed some birds at one of Singapore's tourist attractions". This likely refers to Jurong Bird Park, which is the a tourist destination in Singapore where you can feed birds. Since the source also mentions that Bruce Wayne "walked over to the location in the attached image", we can infer that the location is very close to Jurong Bird Park<br><br>
 
 Unzipping the folder and scutinizing the image, we can see that there are large pools of water. This hints at the location being some sort of a fish or prawn farm where people can fish leisurely as "another activity". 
