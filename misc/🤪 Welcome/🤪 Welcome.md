@@ -12,7 +12,7 @@ Download: https://drive.google.com/file/d/1Dlfp6vC1pto7vW5WUKqvX-tbIt6tfGfg/view
 MD5: 704f59b279476f16e4fcb17b20d23c06
 
 ### Approach
-Watching the video, besides finding it really cool, we can find see that there are white dots appearing on the top right hand of the video. Taking a closer look, we see that the noise starts at about 0:25. Looking at the way the white dots are concentrated in one corner, one guess that we can take is that this white dots might mean something when put together. Something like a QR code maybe?
+Watching the [video](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/misc/%F0%9F%A4%AA%20Welcome/files/Trailer_With_Challenge.mp4), besides finding it really cool, we can find see that there are white dots appearing on the top right hand of the video. Taking a closer look, we see that the noise starts at about 0:25. Looking at the way the white dots are concentrated in one corner, one guess that we can take is that this white dots might mean something when put together. Something like a QR code maybe?
 
 So now, how do we extract the white dots? Firstly, we can extract the relevant frames of the video that contain the white dots using Python and OpenCV.
 
@@ -63,9 +63,10 @@ cap.release()
 cv.destroyAllWindows()
 ```
 This will give us:  
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/misc/%F0%9F%A4%AA%20Welcome/files/frame.jpg "Image")
 
-Putting the extracted image into a [pixspy](https://pixspy.com/), an online image inspection tool, we can see that the white dot is actually composed of 3*3 pixels in a square.
+Putting the extracted image into a [pixspy](https://pixspy.com/), an online image inspection tool, we can see that the white dot is actually composed of 3*3 pixels in a square.  
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/misc/%F0%9F%A4%AA%20Welcome/files/pixspy.png "Image")
 
 We can turn this into 1 pixel by compressing the width and height in a 3:1 ratio each, thus getting an image of size 67\*67. This can be achieved using the following code:
 ```py
@@ -138,10 +139,10 @@ cv.destroyAllWindows()
 ```
 
 Running it, we will get the QR code exported into the same folder as the script itself.  
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/misc/%F0%9F%A4%AA%20Welcome/files/QR.jpg "Image")
 
 Scanning the QR code using [a random online QR code reader](https://4qrcode.com/scan-qr-code.php), we get the flag to be `SEE{W3lc0m3_t0_SEETF_95c42d3be1cb93cce8241235529ad96f8e0e1c12}`. Hooray!  
-![img]( "Image")
+![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/misc/%F0%9F%A4%AA%20Welcome/files/QR%20Reader.png "Image")
 
 ### Flag
 `SEE{W3lc0m3_t0_SEETF_95c42d3be1cb93cce8241235529ad96f8e0e1c12}
