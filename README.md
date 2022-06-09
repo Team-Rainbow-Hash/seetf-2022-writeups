@@ -14,6 +14,7 @@ By Team RainbowHash\: Aley, yanganyi, Shraefkt
 | [Huh Where](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/osint/Huh%20Where/Huh%20Where.md)                                                                                                                           | OSINT           | 52         | 100        |
 | [🧑‍🎓 Sniffed Traffic](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/forensics/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Sniffed%20Traffic/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Sniffed%20Traffic.md)                          | Forensics       | 187        | 100        |
 | [🧑‍🎓 Bonjour](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/smart%20contracts/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Bonjour/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Bonjour.md)                                              | Smart Contracts | 54         | 100        |
+| [🧑‍🎓 Close Enough](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/crypto/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Close%20Enough/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Close%20Enough.md)                                      | Crypto          | 218        | 100        |
 
 🧑‍🎓 = Beginner Friendly  
 🤪 = Insanity Check
