@@ -137,10 +137,10 @@ cap.release()
 cv.destroyAllWindows()
 ```
 
-Running it, we will get the QR code exported into the same folder as the script itself.
+Running it, we will get the QR code exported into the same folder as the script itself.  
 ![img]( "Image")
 
-Scanning the QR code using [a random online QR code reader](https://4qrcode.com/scan-qr-code.php), we get the flag to be `SEE{W3lc0m3_t0_SEETF_95c42d3be1cb93cce8241235529ad96f8e0e1c12}`. Hooray!
+Scanning the QR code using [a random online QR code reader](https://4qrcode.com/scan-qr-code.php), we get the flag to be `SEE{W3lc0m3_t0_SEETF_95c42d3be1cb93cce8241235529ad96f8e0e1c12}`. Hooray!  
 ![img]( "Image")
 
 ### Flag
