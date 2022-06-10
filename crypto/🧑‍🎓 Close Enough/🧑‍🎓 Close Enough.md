@@ -15,6 +15,8 @@ For beginners:
 MD5: 35601e92f6bc17e36bc042ba30f3ebc4
 
 ### Approach
+First of all, please forgive me if this writeup isn't that good. I'm like really tired at this point already. I'm so sorry.
+
 Firstly, to do this challenge, you must understand RSA. If you don't understand it yet, it will be helpful to read up on it [here](https://ctf101.org/cryptography/what-is-rsa/). Lol the link is just the article linked in the challenge description so if you already read that, don't bother.
 
 Unzipping the zip file given, we get 2 files, [encrypt.py](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/crypto/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Close%20Enough/files/encrypt.py) and [key](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/crypto/%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93%20Close%20Enough/files/key).
