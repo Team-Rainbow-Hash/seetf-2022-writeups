@@ -68,7 +68,7 @@ Now that we have φ(n), we can find the private key d. Since d is the modular mu
 ```py
 d = pow(e, -1, totientn)
 ```
-
+<br>
 With c, d and n, we can now decode the ciphertext using the equation `m = c^d mod n`.
 ```py
 m = pow(c, d, n)
