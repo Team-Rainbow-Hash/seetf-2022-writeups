@@ -51,7 +51,7 @@ f = requests.post(url=url, headers=header, data=data)
 print(f.content)
 ```
 
-This sends the flag, which is `SEE{y4y_r3qu3st_smuggl1ng_1s_fun_e28557a604fb011a89546a7fdb743fe9}` to our request bin. Yay!
+This sends the flag, which is `SEE{y4y_r3qu3st_smuggl1ng_1s_fun_e28557a604fb011a89546a7fdb743fe9}`, to our request bin. Yay!
 ![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/web/Flag%20Portal%20(Flag%202)/files/Request.png "Image")
 
 ### Flag
