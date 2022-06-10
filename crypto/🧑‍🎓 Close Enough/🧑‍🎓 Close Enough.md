@@ -57,7 +57,7 @@ def FermatFactors(n):
 p,q= FermatFactors(n)
 ```
 
-Note that since we are working with large numbers in Python, we need to use the Decimal library to carry out operations such as square rooting or we will get `OverflowError: int too large to convert to float`.
+Note: Since we are working with large numbers in Python, we need to use the Decimal library to carry out operations such as square rooting or we will get `OverflowError: int too large to convert to float`.
 
 Now, with p and q, we can now find φ(n), which is equal to (p-q)(q-1). 
 ```py
