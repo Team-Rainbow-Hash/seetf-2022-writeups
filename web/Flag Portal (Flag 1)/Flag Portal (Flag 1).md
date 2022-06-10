@@ -13,7 +13,7 @@ MD5: 0c4f55a57bd99f8438711c3734ccbf4f
 [Download Zip File](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/web/Flag%20Portal%20(Flag%201)/files/web_flagportal.zip "Zip File")
 
 ### Approach
-
+Opening up the source of the code, more specifically [remap.config](), we see that there is a page at `http://flagportal.chall.seetf.sg:10001/admin`. However, this page is protected by the proxy that will redirect us to `http://flagportal/forbidden`. 
 
 ### Flag
 `SEE{}`

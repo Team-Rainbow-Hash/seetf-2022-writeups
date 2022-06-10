@@ -13,7 +13,7 @@ MD5: 0c4f55a57bd99f8438711c3734ccbf4f
 [Download Zip File](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/web/Flag%20Portal%20(Flag%202)/files/web_flagportal.zip "Zip File")
 
 ### Approach
-
+This challenge is the 2nd part of a 2-part challenge so please read [our writeup for the first part of this challenge](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/web/Flag%20Portal%20(Flag%201)/Flag%20Portal%20(Flag%201).md) first if you haven't already.
 
 ### Flag
 `SEE{}`
