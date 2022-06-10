@@ -40,7 +40,7 @@ Thus, we can set up a [requst bin](https://requestbin.com/) to recieve requests.
 Now that the flag and admin key has been sent to the request bin, let's check them out!
 ![img](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/web/Flag%20Portal%20(Flag%201)/files/Request.png "Image")
 
-This gives us the flag to be `SEE{n0w_g0_s0lv3_th3_n3xt_p4rt_bf38678e8a1749802b381aa0d36889e8}` and admin key to be `spendable-snoring-character-ditzy-sepia-lazily`.
+This gives us the flag to be `SEE{n0w_g0_s0lv3_th3_n3xt_p4rt_bf38678e8a1749802b381aa0d36889e8}` and admin key to be `spendable-snoring-character-ditzy-sepia-lazily`. Hooray! Now we can move on to part 2 of the challenge. Check out our writeup for that [here](https://github.com/Team-Rainbow-Hash/seetf-2022-writeups/blob/main/web/Flag%20Portal%20(Flag%202)/Flag%20Portal%20(Flag%202).md)!
 
 ### Flag
 `SEE{n0w_g0_s0lv3_th3_n3xt_p4rt_bf38678e8a1749802b381aa0d36889e8}`
