@@ -156,7 +156,6 @@ import cv2 as cv
 
 cap = cv.VideoCapture('Trailer_With_Challenge.mp4')
 cap.set(cv.CAP_PROP_POS_FRAMES, 1500)
-frameExtracted = False
 whiteDotCoordinates = []
 while cap.isOpened():
     ret, frame = cap.read()
